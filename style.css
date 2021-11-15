@@ -45,6 +45,10 @@ body {
   border: 0.1em solid #d5e4ca; 
 }
 
+.inactive {
+  background-color: #d5e4ca;
+}
+
 .bottom-container {
   display: flex; 
   justify-content: space-between;

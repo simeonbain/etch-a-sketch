@@ -1,0 +1,71 @@
+body {
+  margin: 0; 
+  height: 100%; 
+  overflow: hidden;
+  font-family: Helvetica, sans-serif;
+}
+
+.etch-a-sketch-bg {
+  position: fixed;
+  background-color: #d13636;
+  border-radius: 1em;
+  top: 0;
+  bottom: 0; 
+  left: 0; 
+  right: 0; 
+  min-height: 12em;
+  margin: 1em; 
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas-background {
+  background-color: #d5e4ca;
+  flex: 1;
+  margin: 2em 2em 0 2em; 
+  border-radius: 1em;
+  display: flex; 
+}
+
+.canvas {
+  margin: 1em; 
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+.canvas-row {
+  display: flex; 
+  flex: 1; 
+}
+
+.canvas-cell {
+  flex: 1;
+  background-color: #1f1e1e;
+  border: 0.1em solid #d5e4ca; 
+}
+
+.bottom-container {
+  display: flex; 
+  justify-content: space-between;
+  align-items: center;
+}
+
+.knob {
+  flex: 1; 
+  margin: 1.5em; 
+  background-color: #FFF;
+  aspect-ratio: 1;
+  max-width: 6em;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #d13636;
+}
+
+.title {
+  color: #fff; 
+  text-align: center;
+  font-style: italic; 
+}

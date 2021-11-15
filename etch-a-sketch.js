@@ -6,7 +6,6 @@ let resolution = 16;
 
 /* Actions to perform on window load/refresh */ 
 function onLoad() { 
-  // createGrid(); 
   createCanvas(); 
 }
 

@@ -10,9 +10,9 @@ function onLoad() {
   createCanvas(); 
 }
 
-/* Displays the the etch-a-sketch grid on the page */ 
+/* Creates the the etch-a-sketch grid on the page */ 
 function createCanvas() {
-  // clear the existing canvas if any
+  // remove the existing canvas if any
   while (canvas.firstChild) {
     canvas.removeChild(canvas.firstChild); 
   }
@@ -34,6 +34,7 @@ function createCanvas() {
   }
 }
 
+/* Triggers the appropriate behavior when user hovers over a canvas cell */
 function onHover(e) {
   if (e.target.classList.contains(`canvas-cell`)) {
     const canvasCell = e.target;  
@@ -41,9 +42,20 @@ function onHover(e) {
   }
 }
 
+/* Clears the canvas */ 
+function onClear() {
+  canvas.childNodes.forEach((canvasRow) => {
+    canvasRow.childNodes.forEach((canvasCell) => {
+      canvasCell.classList.add(`inactive`);
+    }); 
+  });
+}
+
 /* Query selectors */ 
 const canvas = document.querySelector(`.canvas`);
+const clearButton = document.querySelector(`button.clear`); 
 
 /* Event listeners */ 
 window.addEventListener(`load`, onLoad);
 window.addEventListener(`mouseover`, onHover);
+clearButton.addEventListener(`click`, onClear);

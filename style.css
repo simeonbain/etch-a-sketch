@@ -1,13 +1,20 @@
+html {
+  --border-color: #d13636;
+  --screen-color: #d5e4ca;
+  --cell-color: #1f1e1e;
+  --knob-color: #fff; 
+  font-family: Helvetica, sans-serif;
+}
+
 body {
   margin: 0; 
   height: 100%; 
   overflow: hidden;
-  font-family: Helvetica, sans-serif;
 }
 
 .etch-a-sketch-bg {
   position: fixed;
-  background-color: #d13636;
+  background-color: var(--border-color);
   border-radius: 1em;
   top: 0;
   bottom: 0; 
@@ -20,7 +27,7 @@ body {
 }
 
 .canvas-background {
-  background-color: #d5e4ca;
+  background-color: var(--screen-color);
   flex: 1;
   margin: 2em 2em 0 2em; 
   border-radius: 1em;
@@ -41,12 +48,12 @@ body {
 
 .canvas-cell {
   flex: 1;
-  background-color: #1f1e1e;
-  border: 0.1em solid #d5e4ca; 
+  background-color: var(--cell-color);
+  border: 0.1em solid var(--screen-color); 
 }
 
 .inactive {
-  background-color: #d5e4ca;
+  background-color: var(--screen-color);
 }
 
 .bottom-container {
@@ -58,18 +65,18 @@ body {
 .knob {
   flex: 1; 
   margin: 1.5em; 
-  background-color: #FFF;
+  background-color: var(--knob-color);
   aspect-ratio: 1;
   max-width: 6em;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  color: #d13636;
+  color: var(--border-color);
 }
 
 .title {
-  color: #fff; 
+  color: var(--knob-color); 
   text-align: center;
   font-style: italic; 
 }

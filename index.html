@@ -7,14 +7,40 @@
   <script src="etch-a-sketch.js" defer></script>  
 </head>
 <body>
+
   <div class="etch-a-sketch-bg">
+
     <div class="canvas-background">
       <div class="canvas"></div>
     </div>
+
     <div class="bottom-container">
       <button class="knob clear">CLR</button>
       <h1 class="title">ETCH-A-SKETCH</h1>
-      <button class="knob settings">SET</button>
+      <button class="knob options">OPT</button>
+    </div>
+  
+  </div>
+
+  <div class="options-panel hidden">
+
+    <div class="options-container">
+
+      <div class="mode">
+        <p>Mode:</p>
+        <button data-mode="standard">Standard</button>
+        <button data-mode="natural">Natural</button>
+        <button data-mode="random">Random</button>
+      </div>
+
+      <div class="resolution">
+        <p>Resolution:</p>
+        <button class="minus">-</button>
+        <p class="value"></p>
+        <button class="plus">+</button>
+        <button class="set">Set</button>
+      </div>
+
     </div>
   </div>
 

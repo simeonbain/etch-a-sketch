@@ -133,6 +133,7 @@ body {
 .mode,
 .resolution {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
@@ -146,4 +147,15 @@ body {
   background: var(--cell-color-fade0);
   color: var(--screen-color);
   cursor: default; 
+}
+
+/* -- Footer -- */
+footer p {
+  margin: 0; 
+  padding: 0; 
+  position: absolute;
+  bottom: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.7rem;
 }
